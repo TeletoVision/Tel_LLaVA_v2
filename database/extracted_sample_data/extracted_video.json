@@ -1,0 +1,57 @@
+[
+    {
+        "video_index": 0,
+        "video_name": "10_skating",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/10_skating.mp4"
+    },
+    {
+        "video_index": 1,
+        "video_name": "08_baseball",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/08_baseball.mp4"
+    },
+    {
+        "video_index": 2,
+        "video_name": "02_fighting",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/02_fighting.mp4"
+    },
+    {
+        "video_index": 3,
+        "video_name": "09_swimming",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/09_swimming.mp4"
+    },
+    {
+        "video_index": 4,
+        "video_name": "11_music",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/11_music.mp4"
+    },
+    {
+        "video_index": 5,
+        "video_name": "03_road accident",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/03_road accident.mp4"
+    },
+    {
+        "video_index": 6,
+        "video_name": "01_explosion",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/01_explosion.mp4"
+    },
+    {
+        "video_index": 7,
+        "video_name": "04_shooting",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/04_shooting.mp4"
+    },
+    {
+        "video_index": 8,
+        "video_name": "07_soccer",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/07_soccer.mp4"
+    },
+    {
+        "video_index": 9,
+        "video_name": "05_cloud",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/05_cloud.mp4"
+    },
+    {
+        "video_index": 10,
+        "video_name": "06_pokeball",
+        "video_path": "/Users/jeeyul/Library/CloudStorage/OneDrive-\u1100\u1162\u110b\u1175\u11ab/3_\u1103\u1162\u110b\u116c\u1112\u116a\u11af\u1103\u1169\u11bc/202406_SKT AI Fellowship 6\u1100\u1175/Tel-LLaVA/Tel_Vid/raw_data/sample_data/06_pokeball.mp4"
+    }
+]

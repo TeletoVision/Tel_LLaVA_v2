@@ -169,3 +169,8 @@ cython_debug/
 *.avi
 *.jpeg
 *.json
+*.npy
+
+!/raw_data/sample_data/01_explosion.mp4
+!/database/extracted_sample_data/extracted_video.json
+!/database/vqa/Abuse001_x264.txt
