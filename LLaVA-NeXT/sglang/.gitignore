@@ -3,13 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-raw_data/
 # C extensions
 *.so
-*.txt
-*.npy
-*.jpg
-raw_data/
+
 # Distribution / packaging
 .Python
 build/
@@ -110,10 +106,8 @@ ipython_config.py
 #pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+#   https://pdm.fming.dev/#use-with-ide
 .pdm.toml
-.pdm-python
-.pdm-build/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
@@ -163,11 +157,27 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+.idea/
 
-# video
-*.mp4
-*.mov
-*.avi
-*.jpeg
+# MacOS
+.DS_Store
 *.json
+
+# Vim
+*.swp
+
+# SGL
+benchmark/mmlu/data
+benchmark/mmlu/data.tar
+benchmark/llava_bench/images
+benchmark/llava_bench/mme_pack
+*.jsonl
+tmp*.txt
+
+# Plots
+*.png
+*.pdf
+
+# personnal
+work_dirs/
+*.csv
