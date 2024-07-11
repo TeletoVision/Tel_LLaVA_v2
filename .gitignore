@@ -3,13 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-raw_data/
 # C extensions
 *.so
 *.txt
 *.npy
 *.jpg
-raw_data/
 # Distribution / packaging
 .Python
 build/
