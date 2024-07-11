@@ -1,4 +1,4 @@
-# File Structure
+## File Structure
 ```
 Tel_LLaVA_v2
 ├─ LLaVA-NeXT
