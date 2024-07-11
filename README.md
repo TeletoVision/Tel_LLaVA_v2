@@ -17,3 +17,18 @@ Tel_LLaVA_v2
 ├─ run.py
 └─ vqa.py
 ```
+
+## 비디오 영상 간 검색
+```
+python retrieval.py
+```
+
+## 비디오 영상 내 분석
+```
+python vqa.py
+```
+
+## 비디오 영상 간 검색 및 분석
+```
+python run.py
+```
