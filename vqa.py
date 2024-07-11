@@ -1,5 +1,6 @@
 import torch
 import transformers
+from transformers import logging
 from transformers import AutoConfig
 transformers.logging.set_verbosity_error()
 
@@ -20,7 +21,6 @@ import warnings
 import numpy as np
 from tqdm import tqdm
 from decord import VideoReader, cpu
-
 # SET GPU 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
@@ -89,7 +89,6 @@ def run_inference(args, video_path):
     logging.getLogger().setLevel(logging.ERROR)
     # Initialize the model
     model_name = get_model_name_from_path(args.model_path)
-
     # Set model configuration parameters if they exist
     if args.overwrite == True:
         overwrite_config = {}
@@ -98,7 +97,7 @@ def run_inference(args, video_path):
         overwrite_config["mm_spatial_pool_out_channels"] = args.mm_spatial_pool_out_channels
         overwrite_config["mm_spatial_pool_mode"] = args.mm_spatial_pool_mode
         overwrite_config["patchify_video_feature"] = False
-        overwrite_config["mlp_bias"] = False ## 추가함.
+        overwrite_config["mlp_bias"] = False
         cfg_pretrained = AutoConfig.from_pretrained(args.model_path)
 
         if "224" in cfg_pretrained.mm_vision_tower:
@@ -114,8 +113,10 @@ def run_inference(args, video_path):
                 overwrite_config["rope_scaling"] = {"factor": float(scaling_factor), "type": "linear"}
             overwrite_config["max_sequence_length"] = 4096 * scaling_factor
             overwrite_config["tokenizer_model_max_length"] = 4096 * scaling_factor
+        print('Load Tel LLaVA')
         tokenizer, model, image_processor, context_len = load_pretrained_model(args.model_path, args.model_base, model_name, load_8bit=args.load_8bit, overwrite_config=overwrite_config)
     else:
+        print(f'Load Tel LLaVA')
         tokenizer, model, image_processor, context_len = load_pretrained_model(args.model_path, args.model_base, model_name)
 
     sample_set = {}
@@ -154,11 +155,12 @@ def run_inference(args, video_path):
         start_time = time.time()
         output_ids = model.generate(inputs=input_ids, images=video, attention_mask=attention_masks, modalities="video", do_sample=True, temperature=0.2, max_new_tokens=1024, use_cache=True, stopping_criteria=[stopping_criteria])
         end_time = time.time()
-        print(f"Time taken for inference: {end_time - start_time} seconds")
+        print(f"\nTime taken for inference: {end_time - start_time} seconds\n")
 
     outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
-    print(f"Question: {prompt}\n")
-    print(f"Response: {outputs}\n")
+    # print(f"Question: {prompt}\n")
+    print(f"Question: {question}\n")
+    print(f"Tel LLaVA Response: {outputs}\n")
 
     # Output save
     cwd = os.getcwd()

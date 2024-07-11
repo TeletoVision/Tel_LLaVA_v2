@@ -152,7 +152,7 @@ def video_retrievel(args):
 
     search_query = args.search_query
     # search_query = map(lambda x : f"A video of, {x}", search_query)  ## TEXT TEMPLATE
-    print(f'Search Query: {search_query}')
+    print(f'Search Query: {search_query}.')
 
     processor = AutoProcessor.from_pretrained(args.model_name).tokenizer
     model     = AutoModel.from_pretrained(args.model_name)
@@ -194,7 +194,7 @@ def video_retrievel(args):
 
     index = top_k_list['top_k_index'].index(1)
     video_path = top_k_list['video_path'][index]
-    print(f'Retrieval Video is {video_path}')
+    print(f'\nRetrieval Video is {video_path}\n')
     return top_k_list, video_path
 
 if __name__ == "__main__":

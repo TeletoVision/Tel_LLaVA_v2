@@ -8,6 +8,7 @@ from decord import VideoReader, cpu
 
 import torch
 import transformers
+from transformers import logging
 from transformers import AutoConfig
 transformers.logging.set_verbosity_error()
 
@@ -24,8 +25,9 @@ from llavavid.conversation import conv_templates, SeparatorStyle
 from llavavid.model.builder import load_pretrained_model
 from llavavid.utils import disable_torch_init
 from llavavid.mm_utils import tokenizer_image_token, get_model_name_from_path, KeywordsStoppingCriteria
-# import warnings
 
+# import warnings
+logging.set_verbosity(logging.WARNING)
 # 경고 메시지 무시 설정
 os.environ['PYTHONWARNINGS'] = 'ignore'
 
