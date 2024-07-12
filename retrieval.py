@@ -208,7 +208,7 @@ if __name__ == "__main__":
     parser.add_argument('--search_query', default="arson", type=str)
     
     ## MODEL PARAMETER
-    parser.add_argument('--clip_len', default=16, type=int)
+    parser.add_argument('--clip_len', default=8, type=int)
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--top_k', default=3, type=int)
 
