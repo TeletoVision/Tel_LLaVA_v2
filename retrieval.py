@@ -13,15 +13,18 @@ from argparse import ArgumentParser
 '''
 ::: MODEL LIST :::
 
-## clip_len = 8
+## Fully-supervised on Kinetics-400:
 # model_name = "microsoft/xclip-base-patch32" # clip_len = 8
-# model_name = "microsoft/xclip-base-patch16" # clip_len = 8
-# model_name = "microsoft/xclip-large-patch14" # clip_len = 8
-
-## clip_len = 16
 # model_name = "microsoft/xclip-base-patch32-16-frames" # clip_len = 16
+# model_name = "microsoft/xclip-base-patch16" # clip_len = 8
 # model_name = "microsoft/xclip-base-patch16-16-frames" # clip_len = 16
+# model_name = "microsoft/xclip-large-patch14" # clip_len = 8
 # model_name = "microsoft/xclip-large-patch14-16-frames" #  clip_len = 16
+
+## Fully-supervised on Kinetics-600:
+# model_name = "microsoft/xclip-base-patch16-kinetics-600" # clip_len = 8
+# model_name = "microsoft/xclip-base-patch16-kinetics-600-16-frames" # clip_len = 16
+# model_name = "microsoft/xclip-large-patch14-kinetics-600" # clip_len = 8
 
 ## HMDB-51
 # model_name = "microsoft/xclip-base-patch16-hmdb-2-shot" # clip_len = 32
@@ -37,11 +40,6 @@ from argparse import ArgumentParser
 
 ## Kinetics-400
 # model_name = "microsoft/xclip-base-patch16-zero-shot" # clip_len = 8
-
-## Kinetics-600
-# model_name = "microsoft/xclip-base-patch16-kinetics-600" # clip_len = 8
-# model_name = "microsoft/xclip-large-patch14-kinetics-600" # clip_len = 8
-# model_name = "microsoft/xclip-base-patch16-kinetics-600-16-frames" # clip_len = 16
 '''
 
 
@@ -204,7 +202,7 @@ if __name__ == "__main__":
     ## DATA & MODEL
     parser.add_argument("--data_path", default="raw_data/sample_data", type=str)
     parser.add_argument("--save_path", default="database/extracted_sample_data/", type=str)
-    parser.add_argument("--model_name", default="microsoft/xclip-base-patch16-16-frames", type=str)
+    parser.add_argument("--model_name", default="microsoft/xclip-large-patch14-kinetics-600", type=str)
     
     ## SEARCH 
     parser.add_argument('--search_query', default="arson", type=str)
